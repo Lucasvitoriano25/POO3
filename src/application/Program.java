@@ -14,6 +14,12 @@ public class Program {
 		
 		BancoItau.cadastrar(ContadoJeff);
 		ContadoJeff.creditar(200.0);
+		if(BancoItau.saldo("123")==200.0){
+			System.out.println("TRUE");	
+			}
+		else {	
+			System.out.println("FALSE");
+		}
 		BancoItau.debitar("123",100.0);
 		if(BancoItau.saldo("123")==100.0){
 			System.out.println("TRUE");	
